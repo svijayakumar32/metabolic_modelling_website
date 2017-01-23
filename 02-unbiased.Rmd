@@ -1,0 +1,101 @@
+# Unbiased methods
+
+Network-based pathway analysis comprises a large family of unbiased
+methods which assess the main properties of biochemical pathways
+[@papin2004comparison]. Gene Association Network-based
+Pathway Analysis (GANPA) improves upon this process by adding gene
+weighting to determine gene non-equivalence within pathways
+[@fang2012network]. Similarly, a novel method was recently
+proposed for assessing the significance of pathways by constructing
+weighted gene-gene interaction networks for normal and cancerous tissue
+samples [@zhang2016network]. These interaction networks
+were subsequently used to expand pathways for each set of samples and
+compare their topologies. Approaches based on network-based pathway
+enrichment analysis aim to identify a greater number of gene
+interactions. For example, NetPEA utilises a protein-protein interaction
+(PPI) network combined with random walk to include information from
+high-throughput networks as well as known pathways
+[@liu2013network]. A combination of network estimation with
+condition-specific omic data has been used to refine the NetGSA
+framework, thereby improving the ability to detect differential activity
+in pathways [@ma2014network].
+
+Elementary flux modes (EFMs) describe the minimal, non-decomposable set
+of pathways operating within a steady-state system; these are found by
+solving the steady-state condition following the iterative removal of
+single reactions until a valid flux distribution can no longer be
+calculated [@zanghellini2013elementary]. As this process
+often yields a combinatorial explosion of common functional motifs, a
+variation of the Agglomeration of Common Motifs (ACoM) method can be
+used to cluster these motifs, allowing for an overlap between classes
+[@peres2011acom]. Alternatively, a single EFM may be
+determined by solving an optimisation problem using EFMevolver
+[@kaleta2009efmevolver], which can draw attention to
+significant EFMs. tEFMA [@gerstl2015metabolomics] removes
+thermodynamically-infeasible EFMs using network-embedded thermodynamic
+(NET) analysis [@kummel2006putative]. The incorporation of
+thermodynamic constraints helps to select for physiologically
+significant EFMs, which become more difficult to detect as the size and
+complexity of networks increases. Identifying the largest
+thermodynamically consistent sets (LTCSs) in these EFMs can further
+characterise condition-specific metabolic capabilities in the
+thermodynamically-feasible regions of the flux cone
+[@gerstl2016sets]. A method known as *K*-shortest EFMs
+[@de2009computing] enumerates EFMs in order of their number
+of reactions and has been applied to genome-scale networks
+[@rezola2011exploring]; the shortest pathways are of
+interest as they typically carry the highest flux and are easily
+manipulable. A recent method prioritises the search for the shortest
+path between a pair of end nodes based on graph theory
+[@hidalgo2016new]. However, the validity of this approach
+has been questioned as reaction stoichiometry is overlooked
+[@rezola2014advances]. Extreme pathways can be described as
+being a systemically independent subset of EFMs
+[@papin2004comparison]. They are characterised by a set of
+convex basis vectors used to represent the edges of the steady-state
+solution space and consist of the minimum number of reactions needed to
+exist as a functional unit [@schilling2000theory]. With the
+aim of increasing the dimensionality of the flux cone, extreme currents
+describe non-decomposable EFMs situated both within and on the
+boundaries of the flux regions, as a result of partitioning each
+reversible reaction into two irreversible reactions
+[@clarke1988stoichiometric]. On the other hand, methods
+using minimal descriptions of the flux cone, such as minimal metabolic
+behaviors [@larhlimi2009new] and minimal generators
+urbanczik2005improved aim to reduce dimensionality. Minimal
+cut sets (MCSs) are another variant of EFMs which result in inactivity
+of the system with respect to the objective reaction if removed
+[@clark2012minimal]. Therefore, they can be used to
+identify target genes to repress undesirable metabolic functions, whilst
+assessing the effect on the structure of the entire metabolic network.
+Elementary flux patterns (EFPs) define all potential elementary routes
+for steady-state fluxes as sets of indices, and can be mapped to EFMs to
+include factors such as pathway interdependencies, thus taking the
+entire network into account [@kaleta2009can].
+
+Unbiased methods may also incorporate Monte-Carlo sampling, message
+passing algorithms or symbolic flux analysis. The Markov chain
+Monte-Carlo (MCMC) method can be used to uniformly sample metabolic
+networks from a genotype space, producing a sequence of viable genotypes
+(or reaction subsets) by performing a reaction swap between each
+genotype and its successor; if a swap results in a non-viable genotype,
+this sequence will remain at the previous genotype for that step and the
+process is repeated until a metabolic network with the correct number of
+reactions is reached [@samal2010genotype]. A Monte-Carlo
+based technique has also been used for uniform sampling of feasible
+steady states in an ellipsoid representing the solution space for a
+genome-scale metabolic model of *Escherichia coli*
+[@de2013montecarlo]. A revision of this method was proposed
+with rounding procedures to improve performance by eliminating
+ill-conditioning when sampling convex polytopes of steady states
+[@de2015uniform]. Of all omic data types, metabolomic data
+are said to give the closest indication of observed phenotypes
+[@aurich2016metabotools]. Therefore, extracellular
+metabolomic measurements can help to predict intracellular flux states
+by integrating these data into a constraint-based framework using a
+sampling-based network approach
+[@mo2009connecting][@aurich2015prediction].
+The Metabo Tools toolbox provides a workflow for integrating metabolomic
+data into multi-omic models and predicting metabolic phenotypes through
+analysing how metabolite uptake and secretion differ between conditions
+[@aurich2016metabotools].

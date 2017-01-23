@@ -1,0 +1,14 @@
+--- 
+title: "Metabolic Modelling Techniques"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [refs.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+# Abstract
+
+Given the wealth of new methods for metabolic modelling, it is not difficult for a modeller to experience the situation of not being able to see the wood (or the forest) for the trees. Driven by this analogy, we here present the ``forest'' of principal methods used for constraint-based modelling in systems biology. We believe that the large scale comparison of the metabolic response of an organism to different environmental conditions will be an important challenge for genome-scale models. Therefore, within the context of multi-omic methods, we describe a tutorial for bacterial multi response (microarray data) to environmental conditions (including antibiotics, temperatures, heat shock). The tutorial for multi-objective optimisation uses the metabolic and transcriptomics adaptation estimator (METRADE) in MATLAB. Finally, we discuss potential implementations of machine-learning in metabolic modelling, towards automatically extracting knowledge from such models. Our updated classification of existing methods and existing tools allows us to suggest the most promising ones, with the aim to develop a vision of how existing methods could hybridise and become more complex.
