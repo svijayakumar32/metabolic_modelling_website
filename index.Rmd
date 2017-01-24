@@ -39,7 +39,7 @@ tax <- read_file('data/taxonomy.yaml') %>%
   yaml.load() %>%
   treefun_onelist()
 
-diagonalNetwork(tax)
+diagonalNetwork(tax, fontFamily = "sans", fontSize = 8)
 
 ```
 

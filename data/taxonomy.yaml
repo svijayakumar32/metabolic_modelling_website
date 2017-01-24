@@ -7,6 +7,7 @@ Metabolic Models:
       - Gene weighting:
         - GANPA
         - Network based pathway expansion
+      - Pathway enrichment:
         - NetPEA
         - NetGSA
       - Elementary flux modes:
@@ -25,10 +26,10 @@ Metabolic Models:
   - Biased:
     - Thermodynamics:
       - Loop removal:
-        - Looless COBRA
+        - Loopless COBRA
         - TMFA
         - tFVA
-      - Termodynamic parameter-based analysis:
+      - Thermodynamic parameter-based analysis:
         - NET
     - Regulatory Methods:
       - Constraints from omic data:
@@ -51,7 +52,7 @@ Metabolic Models:
         - idFBA
         - ROOM
     - Flux balance analysis:
-      - Afternate optima:
+      - Alternate optima:
         - FVA
         - DFBA
         - Bayesian FBA
@@ -65,7 +66,7 @@ Metabolic Models:
         - flexFBA
         - time-linked FBA
     - Strain design:
-      - Gene deletion design
+      - Gene deletion design:
         - GDLS
         - CiED
         - SA-SEAs
@@ -91,26 +92,25 @@ Metabolic Models:
         - SMILEY
         - MIRAGE
       - Objective function development:
-        - Bayesian selection:
-          - Weighted sum method
-          - Multi-objective optimisation:
-            - GDMO
-            - Sensitivity analysis:
-              - RoSA
-              - PoSA
-              - SoSA
-              - TMSA
-            - Multi-objective evolutionary algorithms:
-              - NSGA-II
-            - LPPFBA
-            - CoPE-FBA
-            - OptCom
-            - cFBA
-            - Dynamic flux states:
-              - MetDFBA
-              - dOptCom
-              - AMIGO2
-              - Strain design
-            - Pareto Curve Analysis
+        - Bayesian selection
+        - Weighted sum method
+        - Multi-objective optimisation:
+          - GDMO
+          - Sensitivity analysis:
+            - RoSA
+            - PoSA
+            - SoSA
+            - TMSA
+          - Multi-objective evolutionary algorithms:
+            - NSGA-II
+          - LPPFBA
+          - CoPE-FBA
+          - OptCom
+          - cFBA
+          - Dynamic flux states:
+            - MetDFBA
+            - dOptCom
+            - AMIGO2
+          - Pareto Curve Analysis:
             - DAE solvers
             - NISE/MOFBA
