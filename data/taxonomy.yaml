@@ -1,0 +1,116 @@
+Metabolic Models:
+  - Unbiased:
+    - Network-based Pathway analysis:
+      - Minimal generators
+      - Minimal metabolic behaviours
+      - Elementary flux patterns
+      - Gene weighting:
+        - GANPA
+        - Network based pathway expansion
+        - NetPEA
+        - NetGSA
+      - Elementary flux modes:
+        - Extreme pathways
+        - ACoM
+        - tEFMA
+        - Minimal cut sets
+        - EFMevolver
+        - K-shortest EFMs
+        - Graph-based methods
+    - Message Passing
+    - Symbolic flux analysis
+    - Monte Carlo sampling:
+      - MCMC
+      - Exometobolome effect on internal states
+  - Biased:
+    - Thermodynamics:
+      - Loop removal:
+        - Looless COBRA
+        - TMFA
+        - tFVA
+      - Termodynamic parameter-based analysis:
+        - NET
+    - Regulatory Methods:
+      - Constraints from omic data:
+        - Switch:
+          - GIMME
+          - IMAT
+          - EXAMO
+          - INIT
+          - MADE
+        - Valve:
+          - E-Flux
+          - METRADE
+          - FALCON
+        - omFBA
+        - PROM
+      - Regulatory mechanisms:
+        - rFBA
+        - SR-FBA
+        - iFBA
+        - idFBA
+        - ROOM
+    - Flux balance analysis:
+      - Afternate optima:
+        - FVA
+        - DFBA
+        - Bayesian FBA
+        - METABOLICA
+      - FBA with biological constraints:
+        - pFBA
+        - DMMM
+        - Conditional FBA
+        - RBA
+      - Removal of constraints:
+        - flexFBA
+        - time-linked FBA
+    - Strain design:
+      - Gene deletion design
+        - GDLS
+        - CiED
+        - SA-SEAs
+      - Reaction perturbation design:
+        - OptKnock
+        - RobustKnock
+        - ReacKnock
+      - Reaction addition design:
+        - OptStrain
+        - SimOptStrain
+    - Gene perturbation:
+      - MOMA
+      - IOMA
+      - Synthetic lethality
+      - ROOM
+      - RELATCH
+      - REMEP
+      - FBrAtio
+    - Model refinement:
+      - Gap-filling:
+        - OMNI
+        - GrowMatch
+        - SMILEY
+        - MIRAGE
+      - Objective function development:
+        - Bayesian selection:
+          - Weighted sum method
+          - Multi-objective optimisation:
+            - GDMO
+            - Sensitivity analysis:
+              - RoSA
+              - PoSA
+              - SoSA
+              - TMSA
+            - Multi-objective evolutionary algorithms:
+              - NSGA-II
+            - LPPFBA
+            - CoPE-FBA
+            - OptCom
+            - cFBA
+            - Dynamic flux states:
+              - MetDFBA
+              - dOptCom
+              - AMIGO2
+              - Strain design
+            - Pareto Curve Analysis
+            - DAE solvers
+            - NISE/MOFBA
