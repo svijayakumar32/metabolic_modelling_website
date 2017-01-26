@@ -29,18 +29,18 @@ treefun <- function(x){
     x %>% keep(is_character) %>% map(treefun_character))
 }
 
-getNodes <- function(tree){
-  bind_rows(as_data_frame(tree[names(tree)!='children']) %>%
-              mutate(nchildren = length(tree$children)), 
-            map_df(tree$children %>% keep(is_list), getNodes)
+getNodes <- function(x){
+  bind_rows(tibble::as_data_frame(x[names(x)!='children']) %>%
+              mutate(nchildren = length(x$children)), 
+            map_df(x$children %>% keep(is_list), getNodes)
   )
 }
 
-getEdges <- function(tree){
-  if(length(tree$children)==0){return(NULL)}
+getEdges <- function(x){
+  if(length(x$children)==0){return(NULL)}
   
-  bind_rows(data_frame(from = tree$name, to = tree$children %>% map_chr('name')),
-            map_df(tree$children, getEdges))
+  bind_rows(data_frame(from = x$name, to = x$children %>% map_chr('name')),
+            map_df(x$children, getEdges))
 }
 
 tax <- read_file('data/taxonomy.yaml') %>%
@@ -62,8 +62,9 @@ visNetwork(nodes = getNodes(tax) %>%
                                           damping=0.5
              )
   ) %>%
-  visNodes(font = '60px', color = list(background = 'white')) %>%
-  visEdges(smooth = list(enabled=TRUE, type='continuous'))
+  visNodes(font = list(size = 60, face = 'arial'), color = list(background = 'white')) %>%
+  visEdges(smooth = list(enabled=TRUE, type='continuous')) %>%
+  visExport(type='pdf')
 
 ```
 
