@@ -18,6 +18,9 @@ Metabolic Models:
         - EFMevolver
         - K-shortest EFMs
         - Graph-based methods
+      - Pathway analysis:
+        - GEM-Path
+        - BNICE
     - Message Passing
     - Symbolic flux analysis
     - Monte Carlo sampling:
