@@ -31,6 +31,8 @@ Metabolic Models:
         - tFVA
       - Thermodynamic parameter-based analysis:
         - NET
+        - TFA
+        - EBA
     - Regulatory Methods:
       - Constraints from omic data:
         - Switch:
@@ -40,13 +42,24 @@ Metabolic Models:
           - INIT
           - MADE
         - Valve:
-          - E-Flux
+          - EFlux
+          - Eflux 2
           - METRADE
           - FALCON
+        - Network Pruning:
+          - MBA
+          - FASTCORE
+          - mCADRE
+          - OnePrune
+          - CORD
         - omFBA
         - PROM
         - GCFlux
         - HPCOF
+        - FlexFlux
+        - idFBA
+        - MUFINS
+        - limed-FBA
       - Regulatory mechanisms:
         - rFBA
         - SR-FBA
@@ -59,6 +72,8 @@ Metabolic Models:
         - DFBA
         - Bayesian FBA
         - METABOLICA
+        - CAFBA
+        - corsoFBA
       - FBA with biological constraints:
         - pFBA
         - DMMM
@@ -93,6 +108,10 @@ Metabolic Models:
         - GrowMatch
         - SMILEY
         - MIRAGE
+        - Meneco
+        - GapFind
+        - GapFill
+        - FastGapFill
       - Objective function development:
         - Bayesian selection
         - Weighted sum method
@@ -116,3 +135,8 @@ Metabolic Models:
           - Pareto Curve Analysis:
             - DAE solvers
             - NISE/MOFBA
+          - Community Analysis:
+            - CASINO toolbox
+            - dOptCom
+            - COMETS
+            - MCM
