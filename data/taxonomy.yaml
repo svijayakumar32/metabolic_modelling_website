@@ -45,6 +45,8 @@ Metabolic Models:
           - FALCON
         - omFBA
         - PROM
+        - GCFlux
+        - HPCOF
       - Regulatory mechanisms:
         - rFBA
         - SR-FBA

@@ -11,9 +11,9 @@ link-citations: yes
 # Overview
 
 ```{r echo=FALSE, width=8}
-library(tidyverse)
-library(yaml)
-library(visNetwork)
+temp <- quietly(library)(tidyverse)
+temp <- quietly(library)(yaml)
+temp <- quietly(library)(visNetwork)
 
 treefun_character <- function(x){
   return(list(name = x, children = list()))
