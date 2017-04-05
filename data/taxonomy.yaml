@@ -44,11 +44,19 @@ Metabolic Models:
           - EXAMO
           - INIT
           - MADE
+          - GIMME
+          - GIM3E
+          - tINIT
+          - FASTCORMICS
+          - HPCOF
+          - RegrEx
         - Valve:
           - EFlux
           - Eflux 2
           - METRADE
           - FALCON
+          - PRIME
+          - E-Fmin
         - Network Pruning:
           - MBA
           - FASTCORE
@@ -58,7 +66,6 @@ Metabolic Models:
         - omFBA
         - PROM
         - GCFlux
-        - HPCOF
         - FlexFlux
         - idFBA
         - MUFINS
@@ -98,6 +105,8 @@ Metabolic Models:
       - Reaction addition design:
         - OptStrain
         - SimOptStrain
+        - k-OptForce
+        - OptForce
     - Gene perturbation:
       - MOMA
       - IOMA
@@ -120,6 +129,9 @@ Metabolic Models:
         - Weighted sum method
         - Multi-objective optimisation:
           - GDMO
+          - EMRA
+          - ORACLE
+          - iSCHRUNK
           - Sensitivity analysis:
             - RoSA
             - PoSA
