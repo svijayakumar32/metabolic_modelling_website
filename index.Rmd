@@ -51,8 +51,7 @@ visNetwork(nodes = getNodes(tax) %>%
              mutate(id=name, 
                     title=name, 
                     label=name,
-                    shape = if_else(nchildren>=1, 'box', 'text')) %>%
-             sample_frac(),
+                    shape = if_else(nchildren>=1, 'box', 'text')),
            edges = getEdges(tax)) %>%
   visHierarchicalLayout(direction = 'LR', sortMethod = 'directed', levelSeparation=1000) %>%
   visPhysics(solver='hierarchicalRepulsion', 
