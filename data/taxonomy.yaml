@@ -39,7 +39,6 @@ Metabolic Models:
     - Regulatory Methods:
       - Constraints from omic data:
         - Switch:
-          - GIMME
           - IMAT
           - EXAMO
           - INIT
@@ -67,7 +66,6 @@ Metabolic Models:
         - PROM
         - GCFlux
         - FlexFlux
-        - idFBA
         - MUFINS
         - limed-FBA
       - Regulatory mechanisms:
@@ -82,7 +80,6 @@ Metabolic Models:
         - DFBA
         - Bayesian FBA
         - METABOLICA
-        - CAFBA
         - corsoFBA
       - FBA with biological constraints:
         - pFBA
@@ -145,7 +142,6 @@ Metabolic Models:
           - cFBA
           - Dynamic flux states:
             - MetDFBA
-            - dOptCom
             - AMIGO2
           - Pareto Curve Analysis:
             - DAE solvers
