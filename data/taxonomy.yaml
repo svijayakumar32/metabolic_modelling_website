@@ -1,26 +1,27 @@
 Metabolic Models:
   - Unbiased:
     - Network-based Pathway analysis:
-      - Minimal generators
-      - Minimal metabolic behaviours
-      - Elementary flux patterns
-      - Gene weighting:
-        - GANPA
-        - Network based pathway expansion
-      - Pathway enrichment:
-        - NetPEA
-        - NetGSA
       - Elementary flux modes:
         - Extreme pathways
+        - Elementary flux patterns
         - ACoM
         - tEFMA
         - Minimal cut sets
         - EFMevolver
         - K-shortest EFMs
-        - Graph-based methods
-      - Pathway analysis:
-        - GEM-Path
-        - BNICE
+        - Graph-based methods 
+      - Generating flux modes/minimal generators:
+        - Minimal metabolic behaviours
+        - K-shortest GFMs 
+    - Gene weighting:
+      - GANPA
+      - Network based pathway expansion
+    - Pathway enrichment:
+      - NetPEA
+      - NetGSA
+    - Pathway prediction:
+      - GEM-Path
+      - BNICE
     - Message Passing
     - Symbolic flux analysis
     - Monte Carlo sampling:
@@ -51,7 +52,7 @@ Metabolic Models:
           - RegrEx
         - Valve:
           - EFlux
-          - Eflux 2
+          - Eflux2
           - METRADE
           - FALCON
           - PRIME
@@ -82,8 +83,7 @@ Metabolic Models:
         - METABOLICA
         - corsoFBA
       - FBA with biological constraints:
-        - pFBA
-        - DMMM
+        - pFBA        
         - Conditional FBA
         - RBA
         - CAFBA
@@ -126,9 +126,10 @@ Metabolic Models:
         - Weighted sum method
         - Multi-objective optimisation:
           - GDMO
-          - EMRA
-          - ORACLE
-          - iSCHRUNK
+          - Ensemble modelling
+            - EMRA
+            - ORACLE
+            - iSCHRUNK
           - Sensitivity analysis:
             - RoSA
             - PoSA
@@ -137,17 +138,19 @@ Metabolic Models:
           - MOEA:
             - NSGA-II
           - LPPFBA
-          - CoPE-FBA
-          - OptCom
-          - cFBA
+          - CoPE-FBA  
           - Dynamic flux states:
             - MetDFBA
+            - dOptCom
+            - DMMM
             - AMIGO2
           - Pareto Curve Analysis:
             - DAE solvers
             - NISE/MOFBA
           - Community Analysis:
+            - cFBA
             - CASINO toolbox
-            - dOptCom
+            - OptCom            
             - COMETS
             - MCM
+
