@@ -126,7 +126,7 @@ Metabolic Models:
         - Weighted sum method
         - Multi-objective optimisation:
           - GDMO
-          - Ensemble modelling
+          - Ensemble modelling:
             - EMRA
             - ORACLE
             - iSCHRUNK
