@@ -10,7 +10,7 @@ link-citations: yes
 ---
 # Overview
 
-```{r echo=FALSE, width=8}
+```{r echo=FALSE, width=8, height=12}
 temp <- purrr::quietly(library)(tidyverse)
 temp <- purrr::quietly(library)(yaml)
 temp <- purrr::quietly(library)(visNetwork)
@@ -57,7 +57,7 @@ visNetwork(nodes = getNodes(tax) %>%
   visPhysics(solver='hierarchicalRepulsion', 
              hierarchicalRepulsion = list(nodeDistance = 150, 
                                           springLength = 150, 
-                                          springConstant= 0.1, 
+                                          springConstant= 0.01, 
                                           damping=0.5
              )
   ) %>%
