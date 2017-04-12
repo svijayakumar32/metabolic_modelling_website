@@ -10,7 +10,7 @@ link-citations: yes
 ---
 # Overview
 
-```{r echo=FALSE, width=8, height=12}
+```{r echo=FALSE}
 temp <- purrr::quietly(library)(tidyverse)
 temp <- purrr::quietly(library)(yaml)
 temp <- purrr::quietly(library)(visNetwork)
@@ -52,7 +52,9 @@ visNetwork(nodes = getNodes(tax) %>%
                     title=name, 
                     label=name,
                     shape = if_else(nchildren>=1, 'box', 'text')),
-           edges = getEdges(tax)) %>%
+           edges = getEdges(tax),
+           height = '1000px',
+           width = '750px') %>%
   visHierarchicalLayout(direction = 'LR', sortMethod = 'directed', levelSeparation=1000) %>%
   visPhysics(solver='hierarchicalRepulsion', 
              hierarchicalRepulsion = list(nodeDistance = 150, 
