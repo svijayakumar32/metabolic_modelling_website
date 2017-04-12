@@ -37,6 +37,10 @@ Metabolic Models:
         - NET
         - TFA
         - EBA
+      - Thermodynamic uncertainty analysis:
+        - TMSA
+        - ORACLE
+        - iSCHRUNK
     - Regulatory Methods:
       - Constraints from omic data:
         - Switch:
@@ -48,8 +52,6 @@ Metabolic Models:
           - GIM3E
           - tINIT
           - FASTCORMICS
-          - HPCOF
-          - RegrEx
         - Valve:
           - EFlux
           - Eflux2
@@ -57,6 +59,7 @@ Metabolic Models:
           - FALCON
           - PRIME
           - E-Fmin
+          - PROM
         - Network Pruning:
           - MBA
           - FASTCORE
@@ -64,17 +67,17 @@ Metabolic Models:
           - OnePrune
           - CORDA
         - omFBA
-        - PROM
         - GCFlux
-        - FlexFlux
-        - MUFINS
-        - limed-FBA
+        - HPCOF
+        - RegrEx
       - Regulatory mechanisms:
         - rFBA
         - SR-FBA
         - iFBA
         - idFBA
         - ROOM
+        - FlexFlux
+        - MUFINS
     - Flux balance analysis:
       - Alternate optima:
         - FVA
@@ -82,11 +85,14 @@ Metabolic Models:
         - Bayesian FBA
         - METABOLICA
         - corsoFBA
+        - tFBA
+        - TRFBA
       - FBA with biological constraints:
         - pFBA        
         - Conditional FBA
         - RBA
         - CAFBA
+        - limed-FBA
       - Removal of constraints:
         - flexFBA
         - time-linked FBA
@@ -128,13 +134,10 @@ Metabolic Models:
           - GDMO
           - Ensemble modelling:
             - EMRA
-            - ORACLE
-            - iSCHRUNK
           - Sensitivity analysis:
             - RoSA
             - PoSA
             - SoSA
-            - TMSA
           - MOEA:
             - NSGA-II
           - LPPFBA
