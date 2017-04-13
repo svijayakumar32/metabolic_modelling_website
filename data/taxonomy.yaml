@@ -13,15 +13,15 @@ Metabolic Models:
       - Generating flux modes/minimal generators:
         - Minimal metabolic behaviours
         - K-shortest GFMs 
-    - Gene weighting:
-      - GANPA
-      - Network based pathway expansion
-    - Pathway enrichment:
-      - NetPEA
-      - NetGSA
-    - Pathway prediction:
-      - GEM-Path
-      - BNICE
+      - Gene weighting:
+        - GANPA
+        - Network based pathway expansion
+      - Pathway enrichment:
+        - NetPEA
+        - NetGSA
+      - Pathway prediction:
+        - GEM-Path
+        - BNICE
     - Message Passing
     - Symbolic flux analysis
     - Monte Carlo sampling:
@@ -37,10 +37,10 @@ Metabolic Models:
         - NET
         - TFA
         - EBA
-      - Thermodynamic uncertainty analysis:
-        - TMSA
-        - ORACLE
-        - iSCHRUNK
+        - Thermodynamic uncertainty analysis:
+          - TMSA
+          - ORACLE
+          - iSCHRUNK
     - Regulatory Methods:
       - Constraints from omic data:
         - Switch:
@@ -126,7 +126,7 @@ Metabolic Models:
         - Meneco
         - GapFind
         - GapFill
-        - FastGapFill
+        - fastGapFill
       - Objective function development:
         - Bayesian selection
         - Weighted sum method
