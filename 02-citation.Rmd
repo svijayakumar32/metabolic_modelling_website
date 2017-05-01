@@ -1,0 +1,14 @@
+--- 
+title: "Metabolic Modelling Techniques"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [refs.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+# Citation
+If you use this tool, please cite:
+S. Vijayakumar, M. Conway, P. Lió, and C. Angione, "Seeing the wood for the trees: a forest of methods for optimisation and omic-network integration in metabolic modelling", Briefings in Bioinformatics, 2017
