@@ -101,6 +101,7 @@ Metabolic Models:
         - GDLS
         - CiED
         - SA-SEAs
+        - FOCuS
       - Reaction perturbation design:
         - OptKnock
         - RobustKnock
