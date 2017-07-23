@@ -87,6 +87,7 @@ Metabolic Models:
         - corsoFBA
         - tFBA
         - TRFBA
+        - popFBA
       - FBA with biological constraints:
         - pFBA        
         - Conditional FBA
