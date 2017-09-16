@@ -69,6 +69,8 @@ Metabolic Models:
         - FlexFlux
         - MUFINS
         - limed-FBA
+        - uFBA
+        - popFBA
       - Regulatory mechanisms:
         - rFBA
         - SR-FBA
