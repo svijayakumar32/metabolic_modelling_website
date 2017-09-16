@@ -93,6 +93,8 @@ Metabolic Models:
         - RBA
         - CAFBA
         - limed-FBA
+        - popFBA
+        - uFBA
       - Removal of constraints:
         - flexFBA
         - time-linked FBA
