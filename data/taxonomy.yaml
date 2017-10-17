@@ -22,10 +22,13 @@ Metabolic Models:
       - Pathway prediction:
         - GEM-Path
         - BNICE
+        - MinSpan
     - Message Passing
     - Symbolic flux analysis
-    - Monte Carlo sampling:
+    - Sampling the solution space:
       - MCMC
+      - CHHR
+      - ll-ACHRB
       - Exometobolome effect on internal states
   - Biased:
     - Thermodynamics:
@@ -87,6 +90,7 @@ Metabolic Models:
         - corsoFBA
         - tFBA
         - TRFBA
+        - sparse FBA
       - FBA with biological constraints:
         - pFBA        
         - Conditional FBA
@@ -95,6 +99,7 @@ Metabolic Models:
         - limed-FBA
         - popFBA
         - uFBA
+        - mdFBA
       - Removal of constraints:
         - flexFBA
         - time-linked FBA
@@ -130,6 +135,8 @@ Metabolic Models:
         - GapFind
         - GapFill
         - fastGapFill
+        - SONEC
+        - EnsembleFBA
       - Objective function development:
         - Bayesian selection
         - Weighted sum method
