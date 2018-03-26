@@ -68,11 +68,11 @@ visNetwork(nodes = nodes %>%
            edges = edges) %>%
   visHierarchicalLayout(direction = 'LR', 
                         sortMethod = 'directed', 
-                        levelSeparation=400,
+                        levelSeparation=450,
                         nodeSpacing = 25) %>%
   visPhysics(hierarchicalRepulsion = list(
     nodeDistance=80,
     springLength=50
   )) %>%
-  visNodes(shape='box', font=list(size=22)) %>%
+  visNodes(shape='box', font=list(size=26)) %>%
   visEdges(smooth = list(enabled=TRUE, type='continuous'))
