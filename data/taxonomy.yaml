@@ -36,6 +36,7 @@ Metabolic Models:
         - Loopless COBRA
         - TMFA
         - tFVA
+        - stFBA
       - Thermodynamic parameter-based analysis:
         - NET
         - TFA
@@ -86,6 +87,7 @@ Metabolic Models:
         - FVA
         - DFBA
         - Bayesian FBA
+        - BaMFA
         - METABOLICA
         - corsoFBA
         - tFBA
@@ -122,6 +124,7 @@ Metabolic Models:
       - MOMA
       - IOMA
       - Synthetic lethality
+      - Fast-SL
       - RELATCH
       - REMEP
       - FBrAtio
@@ -137,6 +140,10 @@ Metabolic Models:
         - fastGapFill
         - SONEC
         - EnsembleFBA
+        - GLOBALFIT
+        - GAUGE
+        - BoostGAPFILL
+        - MatBOOST
       - Objective function development:
         - Bayesian selection
         - Weighted sum method
