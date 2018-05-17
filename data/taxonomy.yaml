@@ -89,6 +89,8 @@ Metabolic Models:
         - Conditional FBA
         - RBA
         - CAFBA
+        - deFBA
+        - sdeFBA
       - Removal of constraints:
         - flexFBA
         - time-linked FBA
