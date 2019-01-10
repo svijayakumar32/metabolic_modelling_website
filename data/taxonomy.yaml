@@ -103,6 +103,8 @@ Metabolic Models:
         - OptKnock
         - RobustKnock
         - ReacKnock
+        - Metabolic valve enumeration:
+          - MoVE
       - Reaction addition design:
         - OptStrain
         - SimOptStrain
@@ -148,6 +150,7 @@ Metabolic Models:
             - dOptCom
             - DMMM
             - AMIGO2
+            - GANGSTA
           - Pareto Curve Analysis:
             - DAE solvers
             - NISE/MOFBA
